@@ -1,0 +1,48 @@
+.contenedor-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+p {
+    text-align: justify; 
+    line-height: 1.6;    
+    font-family: Arial, sans-serif; 
+    color: #333;         
+}
+h1 {
+    text-align: center;  
+    margin-bottom: 30px; 
+    font-size: 2.5rem;   
+}
+.contenedor-flex {
+    display: flex;          /* Activa Flexbox */
+    align-items: center;    /* Centra verticalmente la imagen con el texto */
+    justify-content: space-between; /* Deja espacio uniforme entre ellos */
+    gap: 40px;              /* Crea un espacio elegante entre la foto y el texto */
+    max-width: 1000px;      /* Evita que se estire demasiado en pantallas grandes */
+    margin: 50px auto;      /* Centra todo el bloque en la página */
+    padding: 0 20px;
+}
+
+.columna-imagen img {
+    max-width: 400px;       /* Ajusta el tamaño de la foto */
+    border-radius: 10px;    /* Bordes redondeados para que se vea moderno */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave para que resalte */
+}
+
+.columna-texto {
+    flex: 1;                /* Hace que el texto use el espacio sobrante */
+    text-align: justify;    /* Alinea el texto de forma prolija */
+    line-height: 1.6;       /* Mejora el interlineado (lectura más cómoda) */
+}
+@media (max-width: 768px) {
+    .contenedor-flex {
+        flex-direction: column; /* Cambia de filas a columnas en móviles */
+        text-align: center;
+    }
+    
+    .columna-imagen img {
+        max-width: 100%;    /* La imagen ocupa todo el ancho en el celular */
+    }
+}
+
